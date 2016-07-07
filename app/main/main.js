@@ -53,3 +53,17 @@ angular.module('main', [
         }
       });
 });
+
+angular.module('main')
+.controller('PhoneCtrl', function ($cordovaCamera) {
+
+  var options = {
+    destinationType: Camera.DestinationType.FILE_URI,
+    sourceType: Camera.PictureSourceType.CAMERA,
+  };
+
+  $cordovaCamera.getPicture(options)
+  .then(function(imageURI) {
+    console.log(imageURI);
+  });
+});
