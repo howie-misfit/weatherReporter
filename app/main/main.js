@@ -4,6 +4,8 @@ angular.module('main', [
   'ngCordova',
   'ui.router',
   // TODO: load other modules selected during generation
+  // add this one
+  'pascalprecht.translate',
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
 
