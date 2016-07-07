@@ -34,6 +34,15 @@ angular.module('main', [
           }
         }
       })
+      .state('main.phone', {
+        url: '/phone',
+        views: {
+          'tab-phone': {
+            templateUrl: 'main/templates/phone.html',
+            controller: 'PhoneCtrl as ctrl'
+          }
+        }
+      })
       .state('main.debug', {
         url: '/debug',
         views: {
